@@ -6,14 +6,14 @@
 
 #container {
   margin: 100px auto;
-  width: 300px;
+  width: 500px;
   background-color: black;
   border-radius: 25px;
 }
 
 #displayHolder {
   display: flex;
-  padding: 10px 20px 0;
+  padding: 20px 40px;
 
 }
 
@@ -21,7 +21,7 @@
   color: white;
   margin-left:auto;
   padding: 10px;
-  font-size: 50px;
+  font-size: 60px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -29,13 +29,14 @@
   display: grid;
   padding: 10px;
   grid-template-columns: repeat(4, 4fr);
-  gap: 5px;
+  gap: 8px;
 }
 
 .btn {
-  padding: 10px 5px;
+  padding: 24px 0;
   border: solid black 1px;
   border-radius: 50px;
+  font-size: 24px;
 }
 
 
@@ -45,14 +46,34 @@
 
 #comma {
   grid-column-start: 3;
+  font-size: 40px;
+  padding: 0;
 }
 
 #equals {
   grid-column-start: 4;
+  font-size: 32px;
+  padding: 0;
 }
 
 #division {
+  font-size: 40px;
+  padding: 0;
+}
+
+#minus {
   font-size: 20px;
+  padding: 0;
+  font-weight: 900;
+}
+
+#plus {
+  font-size: 32px;
+  padding: 0;
+}
+
+#multiply {
+  font-size: 32px;
   padding: 0;
 }
 
@@ -61,9 +82,17 @@
   color: black;
 }
 
+.light:hover {
+  background-color: rgb(145, 145, 145);
+}
+
 .dark {
   background-color: rgb(63, 63, 63);
   color: white;
+}
+
+.dark:hover {
+  background-color: grey;
 }
 
 .operator {
@@ -71,7 +100,8 @@
   color: white;
 }
 
-#minus {
-  font-size: 20px;
-  padding: 0;
+.operator:hover {
+  background-color: white;
+  color: rgb(248, 161, 0);
 }
+
